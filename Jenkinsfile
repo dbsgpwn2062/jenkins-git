@@ -1,6 +1,6 @@
 node {
     stage('Clone repository') {
-        git credentialsId: 'github-access', url: 'https://github.com/dbsgpwn2062/jenkins-git.git'
+        git credentialsId: 'github-access', url: 'https://github.com/dbsgpwn2062/jenkins-git.git', branch: 'main'
     }
 
     stage('Build image') {
